@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Tab"
+        android:background="@color/bg_module_me"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@id/iv_userheader"
+                android:src="@mipmap/wuming"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#00000000"
+                android:paddingLeft="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/layout_radio"
+            android:background="@drawable/btn_chat_left_selector"
+            android:layout_width="150.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <Button
+                android:textSize="12.0sp"
+                android:textColor="@color/bg_module_me"
+                android:id="@id/btn_nav_followed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的消息"
+                android:layout_weight="1.0" />
+            <Button
+                android:textSize="12.0sp"
+                android:textColor="@color/white"
+                android:id="@id/btn_nav_follows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的饭友"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/btn_search"
+            android:background="@drawable/btn_selector_navbar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/navbar_btn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Tab"
+        android:id="@+id/view">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

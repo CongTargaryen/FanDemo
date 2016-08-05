@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="来咱家做客吧！！！"
+            android:gravity="bottom"
+            android:id="@+id/biaoti"
+            android:textSize="20sp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:textColor="@color/abc_primary_text_material_light" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/jutileirong"
+            android:layout_height="0dp"
+            android:text="就差你了"
+            android:layout_weight="2.5"
+            android:textColor="@color/TextColorGray" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="小饭团"
+            android:layout_weight="0.5"
+            android:textColor="@color/TextColorGray" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/nianxifangshi"
+            android:text="联系方式：10086"
+            android:layout_weight="0.5"
+            android:textColor="@color/TextColorGray" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                fresco:placeholderImage="@mipmap/list_dessert"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="2.7km"
+                android:id="@+id/juli"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:textColor="@color/TextColorGray" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/yiyaoyuerenshu"
+                android:layout_weight="2"
+                android:text="已邀得2/3人"
+                android:textColor="@color/TextColorGray" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

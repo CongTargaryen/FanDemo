@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@id/navbar"
+        android:background="@color/lightbrown"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@id/btn_search"
+            android:background="@drawable/ico_more_twocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/navbar_btn" />
+
+
+        <Button
+            android:id="@id/btn_search"
+            android:background="@drawable/ico_more_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/navbar_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="多啦A梦"
+            android:id="@+id/textView"
+            android:textColor="#ff666666"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navbar"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true" >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@id/layout_user"
+        android:background="@color/lightbrown"
+        android:layout_width="fill_parent"
+        android:layout_height="118dp"
+        android:layout_below="@id/navbar"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/layout_user3"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@id/iv_userheader"
+                android:src="@mipmap/wuming"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#00000000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_user3"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textSize="16.0sp"
+                    android:textColor="#ff666666"
+                    android:id="@id/btn_pujie"
+                    android:background="@color/lightbrown"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0等级"
+                    android:layout_weight="1" />
+                <Button
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:id="@+id/btn_wuliao"
+                    android:background="@color/lightbrown"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="得到的赞"
+                    android:layout_weight="1" />
+                <Button
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:id="@id/btn_status"
+                    android:background="@color/lightbrown"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="我的菜谱"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/account_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_account" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="账号管理"
+                    android:layout_weight="1.0" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/homepage_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_homepage" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="菜单管理"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/qrcard_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_card" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="二维码名片"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/qrscan_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_twocode" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="扫描二维码"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/question_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_aq" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="常见问题"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/update_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_download" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="检测更新" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ffaaaaaa"
+                    android:gravity="center_vertical"
+                    android:id="@id/text_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="当前版本：1.0"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/about_layout"
+                android:background="@drawable/list_item_bg_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_more_about" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#ff666666"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="关于饭友"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/more_black"
+                    android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
